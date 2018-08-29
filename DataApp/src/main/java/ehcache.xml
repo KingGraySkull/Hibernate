@@ -26,6 +26,15 @@
 		timeToLiveSeconds="10">
 		<persistence strategy="localTempSwap" />
 	</cache>
+	
+	<cache 
+		name="cardCacheRegion"
+		maxEntriesLocalHeap="10000"
+		eternal="false"
+		timeToIdleSeconds="5" 
+		timeToLiveSeconds="10">
+		<persistence strategy="localTempSwap" />
+	</cache>
 
 	<cache name="org.hibernate.cache.internal.StandardQueryCache"
 		maxEntriesLocalHeap="5" eternal="false" timeToLiveSeconds="120">

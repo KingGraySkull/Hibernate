@@ -31,5 +31,9 @@
     	<property name = "hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.SingletonEhcacheRegionFactory</property>
         
         <mapping class = "entities.Customers" />
+        <mapping class = "entities.Card" />
+        <mapping class = "entities.Vehicle" />
+        <mapping class = "entities.Book" />
+        <mapping class = "entities.Author" />
     </session-factory>
 </hibernate-configuration>

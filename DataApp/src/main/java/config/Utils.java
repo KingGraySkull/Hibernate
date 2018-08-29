@@ -3,7 +3,7 @@ package config;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class Utils
+public final class Utils
 {
 	private static SessionFactory sf = null;
 	
@@ -20,4 +20,8 @@ public class Utils
 		return sf;
 	}
 	
+	public static void shutdown()
+	{
+		sf.close();
+	}
 }
